@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  height: 800px;
+  position: relative;
+  left: 35%;
+}
+.tit {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  color: #fd3963;
+  font-family: cursive;
+  margin-left: 20px;
+}
+
+.outer {
+  height: 600px;
+  width: 400px;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, #fc466b 100%);
+  border-radius: 10%;
+  box-shadow: #fff 0px 3px 6px, #fff 0px 3px 6px;
+}
+.outeranimation {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 3s ease infinite;
+}
+@keyframes gradient {
+  0% {
+    background: linear-gradient(-45deg, #020202, #e73c7e, #23a6d5, #23d5ab);
+  }
+  50% {
+    background: linear-gradient(-45deg, #020202, #faf9f9, #23a6d5, #23d5ab);
+  }
+  100% {
+    background: linear-gradient(-45deg, #020202, #e73c7e, #1f2f35, #d3bf0f);
+  }
+}
+
+.inner {
+  position: relative;
+  top: 25px;
+  left: 25px;
+  height: 550px;
+  width: 350px;
+  border-radius: 10%;
+  background: rgb(11, 12, 14);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 12, 14, 1) 0%,
+    rgba(61, 61, 68, 1) 100%
+  );
+}
+.cover img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 50px;
+  left: 75px;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.songname {
+  font-family: monospace;
+  position: relative;
+  top: 70px;
+  text-align: center;
+  font-size: 1rem;
+  font-stretch: ultra-expanded;
+}
+.songname h1 {
+  font-family: "Orelega One";
+  letter-spacing: 3px;
+  text-shadow: 2px 2px #fc466b;
+}
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 90%;
+  position: relative;
+  top: 90px;
+  left: 20px;
+  right: 20px;
+}
+
+.progress {
+  background-color: #fc466b;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.timing {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+  top: 90px;
+  left: 25px;
+  right: 25px;
+}
+.controls {
+  position: relative;
+  top: 110px;
+  left: 35px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+.controls i {
+  padding: 15px;
+  font-size: 2em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.controls i:hover {
+  border-radius: 50%;
+  background: #fc466b;
+}
