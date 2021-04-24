@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tit">
+            <span style="font-size: 4em; color: #fd3963;">
+                <i class="fas fa-play-circle"></i>
+            </span>
+            <h1>Relax with the music</h1>
+        </div>
+        <div class="musicplay">
+            <div class="outer" id="out">
+                <div class="inner">
+                    <div class="cover">
+                        <img src="images/perfect.jpeg" id="cover">
+                    </div>
+                    <div class="songname">
+                        <h1 id="sname" style="color: #4d4d4d;">Perfect</h1>
+                        <h3 id="singername" style="color: #fd3963;">Ed Sheeran</h3>
+                    </div>
+                    <div class="progress-container" id="pc">
+                        <div class="progress" id="progress"></div>
+
+                    </div>
+                    <div class="timing">
+                        <span id="start">0:00</span>
+                        <span id="end">4:23</span>
+                    </div>
+                    <div class="controls">
+                        <i class="fas fa-backward" onclick="prev();" title="Previous"></i>
+                        <i id="play" class="fas fa-play" onclick="playpause();" title="Play"></i>
+                        <i class="fas fa-forward" onclick="next();" title="Next"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
